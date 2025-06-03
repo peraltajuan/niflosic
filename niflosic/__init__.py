@@ -1,1 +1,1 @@
-from fodMC.version import __version__
+from FODQR.version import __version__
