@@ -611,7 +611,7 @@ def run_dft(molecule_sm,smiles='smiles',spin=0,charge=0,orbs='flosic'):
        mol.atom = molecule_sm+'0.0 0.0 0.0\n'
     else:
        print('ERROR') # catch the error here
-    mol.basis =  '6-31G'
+    mol.basis =  'sto-3G'
     mol.cart=True
     mol.build()
     
