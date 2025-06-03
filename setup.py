@@ -1,6 +1,6 @@
 import setuptools
 setuptools.setup(     
-     name="FOD QR",
+     name="niflosic",
      author = "Juan E. Peralta",
      version="0.0.1",
      python_requires=">=3.10", 
