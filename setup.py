@@ -6,4 +6,5 @@ setuptools.setup(
      python_requires=">=3.10", 
      requires = ["setuptools", "pyscf", "numpy", "rdkit", "scipy"],
      packages=["niflosic"],
+     py_modules=["niflosic"]
 )
