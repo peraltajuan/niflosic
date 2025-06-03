@@ -1,1 +1,1 @@
-from FODQR.version import __version__
+from niflosic.version import __version__
