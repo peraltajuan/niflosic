@@ -137,8 +137,8 @@ def docsic_g(mf,mol,P,orbs='flosic'):
     '''
     grid = pyscf.dft.gen_grid.Grids(mol)
 #   check https://pyscf.org/_modules/pyscf/dft/LebedevGrid.html#MakeAngularGrid
-    grid.atom_grid = (30, 110)  
-    
+    grid.atom_grid = (30, 194)  
+#    grid.atom_grid = {'C': (6, 110)} 
     S = mol.intor('int1e_ovlp')
 #    print('Trace of P = ', np.trace(S@P))
 #    quit()
@@ -211,12 +211,17 @@ def docsic_g(mf,mol,P,orbs='flosic'):
         rho,gx,gy,gz,tau =  0.5*ni.eval_rho(mol, aogao, P ,xctype ='MGGA',with_lapl=False)
         sqrt_rho = np.sqrt(rho)   
         grad2 = gx**2+gy**2+gz**2
-        Dh     = 3.0/10.0*(3.*np.pi**2)**(2./3.)*rho**(5./3.)
+        Dh     =  3.0/10.0*(3.*np.pi**2)**(2./3.)*rho**(5./3.)
         lol =  1./(1.+2.*tau/Dh)
         lol = np.nan_to_num(lol,nan=0.0, posinf=0.0, neginf=0.0)
+#        sqrt_rho = np.nan_to_num(sqrt_rho,nan=0.0, posinf=0.0, neginf=0.0)
+        vwke  = grad2/8.0/rho
+        D = tau - vwke
+        elf = 1.0/( 1.0 + (D/Dh)**2 )
+        elf = np.nan_to_num(elf,nan=0.0, posinf=0.0, neginf=0.0)
         for i in range(nocc): 
-             maxf = np.sqrt(max(fo[:,i]**2))
-             fo[:,i] =  fo[:,i]/maxf*lol
+             maxf =  np.sqrt(max(fo[:,i]**2 / rho   ))
+             fo[:,i] =  fo[:,i]/sqrt_rho /maxf * elf    #/  *elf #  * elf   # *lol    /maxf *elf#  *lol
 
 
     else:   
@@ -256,6 +261,10 @@ def docsic_g(mf,mol,P,orbs='flosic'):
         Q,  R, piv = scipy.linalg.qr(fo_b.T , pivoting=True);
         PIV_b = piv[0:nocc_b]
 
+
+    print('***** sqrt_rho = ', sqrt_rho[PIV])
+    print('***** elf      = ', elf[PIV])
+    print('***** lol      = ', lol[PIV])
      
 # Add coefficients to ks object
 ###############################
@@ -488,7 +497,7 @@ def dispersion(mf,mol):
 
 
     grid = pyscf.dft.gen_grid.Grids(mol)
-    grid.atom_grid =  (200, 350)
+    grid.atom_grid =  (40, 350)
     grid.build() 
     coords = grid.coords
     weights = grid.weights
