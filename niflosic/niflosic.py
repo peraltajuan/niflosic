@@ -262,9 +262,9 @@ def docsic_g(mf,mol,P,orbs='flosic'):
         PIV_b = piv[0:nocc_b]
 
 
-    print('***** sqrt_rho = ', sqrt_rho[PIV])
-    print('***** elf      = ', elf[PIV])
-    print('***** lol      = ', lol[PIV])
+#    print('***** sqrt_rho = ', sqrt_rho[PIV])
+#    print('***** elf      = ', elf[PIV])
+#    print('***** lol      = ', lol[PIV])
      
 # Add coefficients to ks object
 ###############################
