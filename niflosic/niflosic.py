@@ -588,9 +588,43 @@ def hxcsic(mf,mol):
 
     return HXC
 
+import mendeleev
 
+def run_atoms(atom_list,ionize):
+    summary = []
+    for element in mendeleev.elements.get_all_elements()[atom_list]  :
+       symbol = element.symbol
+       if ionize == 0 : 
+            spin = element.ec.unpaired_electrons()
+            EC = element.ec
+            ch=''
+       elif ionize == 1 : 
+            spin = element.ec.ionize().unpaired_electrons()
+            EC = element.ec.ionize()
+            ch='+1'
+       elif ionize == 2 : 
+            spin = element.ec.ionize().ionize().unpaired_electrons()
+            EC = element.ec.ionize().ionize()
+            ch='+2'
+       elif ionize == 3 : 
+            spin = element.ec.ionize().ionize().ionize().unpaired_electrons()
+            EC = element.ec.ionize().ionize().ionize()
+            ch='+3'
+       else:
+            raise Exception("Wrong ionize number. Must be 0-3")
+       ne = element.atomic_number - ionize
+       nu = (ne + spin)/2
+       nd = (ne - spin)/2
+#      method can be 'rho', 'max', or 'not'. They will give different FODs
+       mf  =  run_dft(symbol+ch,smiles='atom',spin=spin,charge=ionize)
+       conv= mf[1].converged
+       summary.append([ne,symbol+ch, spin,nu,nd, conv, element.ec] )
+       if conv:
+           submit_flosic(symbol+ch)
+           get_atomic_population(mf[1],symbol+ch)
+    
 
-
+    return summary   
 
 
 
