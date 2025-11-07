@@ -20,7 +20,7 @@ python run_test_flosic.py <molecule> <functional> <basis> <method> <mkorbs> <cha
 | `functional` | Exchange-correlation functional(s), comma-separated (e.g., `pbe,pbe`)       |
 | `basis`      | Basis set (e.g., `6-31G`)                                                    |
 | `method`     | Method for orbital localization: `scdm-g`, `elf`, `lol`, `grid`             |
-| `mkorbs`     | Orbital generation method: `scdm-g`, `floa`                                 |
+| `mkorbs`     | Orbital generation method: `scdm-g`, `flo`                                 |
 | `charge`     | Integer charge of the system                                                |
 | `spin`       | Spin multiplicity minus one (e.g., `1` for singlet, `2` for doublet, etc.)  |
 
