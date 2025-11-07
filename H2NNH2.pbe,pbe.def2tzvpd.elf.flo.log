@@ -1,0 +1,464 @@
+pyscf version:    2.6.0
+numpy version : 1.25.2
+scipy version : 1.15.1
+*********************************************************************************
+************************************ DFT SCF  ***********************************
+*********************************************************************************
+
+
+******** <class 'pyscf.df.df_jk.DFRKS'> ********
+method = DFRKS
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+diis_damp = 0
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = False
+chkfile to save SCF result = /tmp/local/63238279/tmpv246js3u
+max_memory 10000 MB (current use 480 MB)
+XC library pyscf.dft.libxc version 6.1.0
+    S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+XC functionals = pbe,pbe
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 77, 3865 (1996)
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 78, 1396 (1997)
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 77, 3865 (1996)
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 78, 1396 (1997)
+small_rho_cutoff = 1e-07
+Set gradient conv threshold to 3.16228e-05
+Initial guess from minao.
+init E= -111.804767088859
+  HOMO = -0.272639417382308  LUMO = -0.0286772402792609
+cycle= 1 E= -111.732909943066  delta_E= 0.0719  |g|= 0.422  |ddm|= 1.65
+  HOMO = -0.106978384088504  LUMO = -0.00855657835971691
+cycle= 2 E= -111.640264472482  delta_E= 0.0926  |g|= 0.772  |ddm|= 1.62
+  HOMO = -0.195217619599309  LUMO = -0.0223093723221154
+cycle= 3 E= -111.775377249895  delta_E= -0.135  |g|= 0.0613  |ddm|= 1.07
+  HOMO = -0.192818260808349  LUMO = -0.0203147960723182
+cycle= 4 E= -111.776107927943  delta_E= -0.000731  |g|= 0.0114  |ddm|= 0.0468
+  HOMO = -0.193598814085819  LUMO = -0.0209075158598507
+cycle= 5 E= -111.776135657486  delta_E= -2.77e-05  |g|= 0.00116  |ddm|= 0.0104
+  HOMO = -0.193625465855444  LUMO = -0.0208998315689381
+cycle= 6 E= -111.776136007449  delta_E= -3.5e-07  |g|= 0.000215  |ddm|= 0.00171
+  HOMO = -0.193652094293811  LUMO = -0.0209225294471423
+cycle= 7 E= -111.776136018188  delta_E= -1.07e-08  |g|= 4.77e-05  |ddm|= 0.000273
+  HOMO = -0.193652366336649  LUMO = -0.02092057495986
+cycle= 8 E= -111.776136018696  delta_E= -5.08e-10  |g|= 4.28e-06  |ddm|= 3.77e-05
+  HOMO = -0.193652199182859  LUMO = -0.0209208735946354
+Extra cycle  E= -111.776136018698  delta_E= -2.25e-12  |g|= 3.01e-06  |ddm|= 9.03e-06
+converged SCF energy = -111.776136018698
+*********************************************************************************
+********************************* DFT SCF Done  *********************************
+*********************************************************************************
+Elapsed time is 9.272822 seconds.
+*********************************************************************************
+
+ Lodwin Population
+ Center         charge    
+   0N         -0.09949 
+   1N         -0.09949 
+   2H          0.04579 
+   3H          0.04579 
+   4H          0.05370 
+   5H          0.05370 
+Dipole moment(X, Y, Z, Debye): -0.00000,  0.00000,  2.63426
+Functional  pbe,pbe
+SIC         doc-sic
+Basis       def2tzvpd
+charge  0
+spin    0
+*********************************************************************************
+************************************ NI-FLOSIC  *********************************
+*********************************************************************************
+*** evaluating pivoting vectors ***
+*** D is:  26.28546184149955
+Rank of matrix =  9
+Delta_E =  9.999
+*** new pivoting vectors will be used ***
+-0.021766  1.388038 -0.277514 
+ 0.021766 -1.388038 -0.277514 
+ 1.592597  1.895584  0.056881 
+-1.592597 -1.895584  0.056881 
+ 0.810518 -1.770021  1.303447 
+-0.810518  1.770021  1.303447 
+-0.602688  1.895584 -1.266148 
+ 0.602688 -1.895584 -1.266148 
+ 0.000000 -0.082251 -0.212216 
+*** deviation sum_Pi from total P: 5.278764311239836e-15
+Eigenvalues of Overlap:
+ 0.741763  0.771578  0.853431  0.889135  0.989981  1.126389  1.150183  1.223755 
+ 1.253786 
+Condition number:  1.6902792983579813
+
+Evaluating self-XC for SIC orbitals
+ 1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000 
+ 1.000000 
+-2.065624 -2.065582 -0.391642 -0.391026 -0.389969 -0.390464 -0.381131 -0.380332 
+-0.399008 
+Evaluating self-Hartree for SIC orbitals
+ 2.097825  2.097765  0.381789  0.380776  0.378549  0.379383  0.365833  0.364536 
+ 0.384809 
+
+Total Energy =                        -111.729114814514460
+Nuclear Repulsion Energy =              41.563643693362408
+One-electron Energy =                 -233.256740701702256
+Two-electron Energy =                   79.916960989641865
+Two-electron Coulomb Energy =           95.086106031310067
+DFT Exchange-Correlation Energy =      -15.169145041668195
+Total DFT Energy (no SIC)       =     -111.776136018697983
+SIC  Energy                     =        0.047021204183524
+*** using previous pivoting vectors (do_piv=False) ***
+*** deviation sum_Pi from total P: 5.215694263176682e-15
+Eigenvalues of Overlap:
+ 0.731367  0.763042  0.865352  0.904759  0.998332  1.117446  1.142246  1.225356 
+ 1.252101 
+Condition number:  1.7120011666522428
+
+Evaluating self-XC for SIC orbitals
+ 1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000 
+ 1.000000 
+-2.068503 -2.068484 -0.391916 -0.391354 -0.390314 -0.390801 -0.383314 -0.382509 
+-0.398566 
+Evaluating self-Hartree for SIC orbitals
+ 2.102016  2.102009  0.383833  0.382970  0.381110  0.381860  0.369647  0.368426 
+ 0.386263 
+
+Total Energy =                        -111.746128280120999
+Nuclear Repulsion Energy =              41.563643693362408
+One-electron Energy =                 -233.006565014512574
+Two-electron Energy =                   79.681541007303878
+Two-electron Coulomb Energy =           94.834150302103282
+DFT Exchange-Correlation Energy =      -15.152609294799397
+Total DFT Energy (no SIC)       =     -111.761380313846288
+SIC  Energy                     =        0.015252033725288
+Commutator Error: 2.0947e-01 
+*** using previous pivoting vectors (do_piv=False) ***
+*** deviation sum_Pi from total P: 6.50619106002923e-15
+Eigenvalues of Overlap:
+ 0.727285  0.759385  0.871762  0.913048  1.000184  1.115222  1.140624  1.222914 
+ 1.249576 
+Condition number:  1.7181396472349155
+
+Evaluating self-XC for SIC orbitals
+ 1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000 
+ 1.000000 
+-2.069397 -2.069335 -0.393998 -0.393362 -0.392301 -0.392882 -0.388243 -0.387299 
+-0.400965 
+Evaluating self-Hartree for SIC orbitals
+ 2.102994  2.102945  0.385856  0.384928  0.383088  0.383927  0.374853  0.373492 
+ 0.388535 
+
+Total Energy =                        -111.746857638744771
+Nuclear Repulsion Energy =              41.563643693362408
+One-electron Energy =                 -233.417179581652277
+Two-electron Energy =                   80.092352561622775
+Two-electron Coulomb Energy =           95.295841320338170
+DFT Exchange-Correlation Energy =      -15.203488758715396
+Total DFT Energy (no SIC)       =     -111.761183326667080
+SIC  Energy                     =        0.014325687922321
+Commutator Error: 1.5456e-01 
+*** using previous pivoting vectors (do_piv=False) ***
+*** deviation sum_Pi from total P: 7.263922728501784e-15
+Eigenvalues of Overlap:
+ 0.726281  0.758486  0.874003  0.916445  0.999416  1.114018  1.139738  1.221937 
+ 1.249676 
+Condition number:  1.7206492634075026
+
+Evaluating self-XC for SIC orbitals
+ 1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000 
+ 1.000000 
+-2.069120 -2.069067 -0.392957 -0.392378 -0.391322 -0.391849 -0.386896 -0.386034 
+-0.400226 
+Evaluating self-Hartree for SIC orbitals
+ 2.102690  2.102652  0.384962  0.384093  0.382309  0.383093  0.373571  0.372301 
+ 0.387871 
+
+Total Energy =                        -111.747312319161338
+Nuclear Repulsion Energy =              41.563643693362408
+One-electron Energy =                 -233.192408028567485
+Two-electron Energy =                   79.868838576332266
+Two-electron Coulomb Energy =           95.047678191114571
+DFT Exchange-Correlation Energy =      -15.178839614782301
+Total DFT Energy (no SIC)       =     -111.759925758872825
+SIC  Energy                     =        0.012613439711499
+Commutator Error: 4.9102e-02 
+*** using previous pivoting vectors (do_piv=False) ***
+*** deviation sum_Pi from total P: 4.805166141820465e-15
+Eigenvalues of Overlap:
+ 0.724148  0.756541  0.877712  0.921444  0.999396  1.112989  1.139059  1.219824 
+ 1.248887 
+Condition number:  1.72462876036761
+
+Evaluating self-XC for SIC orbitals
+ 1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000 
+ 1.000000 
+-2.069228 -2.069153 -0.393183 -0.392554 -0.391489 -0.392070 -0.387893 -0.386941 
+-0.400708 
+Evaluating self-Hartree for SIC orbitals
+ 2.102803  2.102740  0.385198  0.384285  0.382513  0.383346  0.374667  0.373310 
+ 0.388369 
+
+Total Energy =                        -111.747379013177479
+Nuclear Repulsion Energy =              41.563643693362408
+One-electron Energy =                 -233.241570100621658
+Two-electron Energy =                   79.918574961181704
+Two-electron Coulomb Energy =           95.103764156466625
+DFT Exchange-Correlation Energy =      -15.185189195284917
+Total DFT Energy (no SIC)       =     -111.759351446077559
+SIC  Energy                     =        0.011972432900070
+Commutator Error: 1.0979e-02 
+*** using previous pivoting vectors (do_piv=False) ***
+*** deviation sum_Pi from total P: 4.104182371568534e-15
+Eigenvalues of Overlap:
+ 0.723732  0.756050  0.878692  0.922818  0.999031  1.112745  1.138959  1.219155 
+ 1.248818 
+Condition number:  1.7255243114574548
+
+Evaluating self-XC for SIC orbitals
+ 1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000 
+ 1.000000 
+-2.069219 -2.069160 -0.393129 -0.392553 -0.391483 -0.392012 -0.387908 -0.387045 
+-0.400670 
+Evaluating self-Hartree for SIC orbitals
+ 2.102792  2.102748  0.385149  0.384284  0.382509  0.383297  0.374695  0.373427 
+ 0.388322 
+
+Total Energy =                        -111.747381533713011
+Nuclear Repulsion Energy =              41.563643693362408
+One-electron Energy =                 -233.235217018973287
+Two-electron Energy =                   79.912279533298218
+Two-electron Coulomb Energy =           95.097048883050348
+DFT Exchange-Correlation Energy =      -15.184769349752125
+Total DFT Energy (no SIC)       =     -111.759293792312675
+SIC  Energy                     =        0.011912258599658
+Commutator Error: 4.5643e-03 
+*** using previous pivoting vectors (do_piv=False) ***
+*** deviation sum_Pi from total P: 5.330410811468113e-15
+Eigenvalues of Overlap:
+ 0.723638  0.755941  0.878903  0.923107  0.998949  1.112717  1.138920  1.218993 
+ 1.248830 
+Condition number:  1.7257667606164317
+
+Evaluating self-XC for SIC orbitals
+ 1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000 
+ 1.000000 
+-2.069229 -2.069153 -0.393153 -0.392521 -0.391449 -0.392035 -0.387951 -0.386996 
+-0.400670 
+Evaluating self-Hartree for SIC orbitals
+ 2.102802  2.102739  0.385169  0.384253  0.382477  0.383316  0.374738  0.373378 
+ 0.388324 
+
+Total Energy =                        -111.747381867447942
+Nuclear Repulsion Energy =              41.563643693362408
+One-electron Energy =                 -233.235690220997895
+Two-electron Energy =                   79.912744511091319
+Two-electron Coulomb Energy =           95.097511580077608
+DFT Exchange-Correlation Energy =      -15.184767068986291
+Total DFT Energy (no SIC)       =     -111.759302016544169
+SIC  Energy                     =        0.011920149096229
+Commutator Error: 2.6035e-03 
+*** using previous pivoting vectors (do_piv=False) ***
+*** deviation sum_Pi from total P: 6.191590260652324e-15
+Eigenvalues of Overlap:
+ 0.723612  0.755892  0.878972  0.923192  0.998920  1.112691  1.138921  1.218953 
+ 1.248846 
+Condition number:  1.725849285529901
+
+Evaluating self-XC for SIC orbitals
+ 1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000 
+ 1.000000 
+-2.069225 -2.069159 -0.393140 -0.392538 -0.391467 -0.392020 -0.387924 -0.387020 
+-0.400668 
+Evaluating self-Hartree for SIC orbitals
+ 2.102798  2.102746  0.385156  0.384269  0.382492  0.383302  0.374711  0.373403 
+ 0.388322 
+
+Total Energy =                        -111.747382002700121
+Nuclear Repulsion Energy =              41.563643693362408
+One-electron Energy =                 -233.236205657308574
+Two-electron Energy =                   79.913254481246653
+Two-electron Coulomb Energy =           95.098065369064599
+DFT Exchange-Correlation Energy =      -15.184810887817951
+Total DFT Energy (no SIC)       =     -111.759307482699498
+SIC  Energy                     =        0.011925479999388
+Commutator Error: 8.6743e-04 
+*** using previous pivoting vectors (do_piv=False) ***
+*** deviation sum_Pi from total P: 7.642352702203055e-15
+Eigenvalues of Overlap:
+ 0.723598  0.755860  0.879010  0.923235  0.998894  1.112679  1.138910  1.218950 
+ 1.248865 
+Condition number:  1.7259109797035197
+
+Evaluating self-XC for SIC orbitals
+ 1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000 
+ 1.000000 
+-2.069227 -2.069159 -0.393145 -0.392537 -0.391465 -0.392025 -0.387928 -0.387013 
+-0.400665 
+Evaluating self-Hartree for SIC orbitals
+ 2.102801  2.102746  0.385161  0.384267  0.382490  0.383306  0.374715  0.373395 
+ 0.388318 
+
+Total Energy =                        -111.747382018750372
+Nuclear Repulsion Energy =              41.563643693362408
+One-electron Energy =                 -233.236303067441384
+Two-electron Energy =                   79.913349650071979
+Two-electron Coulomb Energy =           95.098174901087489
+DFT Exchange-Correlation Energy =      -15.184825251015518
+Total DFT Energy (no SIC)       =     -111.759309724006997
+SIC  Energy                     =        0.011927705256628
+Commutator Error: 1.6248e-04 
+*** using previous pivoting vectors (do_piv=False) ***
+*** deviation sum_Pi from total P: 3.2280730221486736e-15
+Eigenvalues of Overlap:
+ 0.723594  0.755849  0.879016  0.923234  0.998888  1.112673  1.138907  1.218964 
+ 1.248876 
+Condition number:  1.7259345658294116
+
+Evaluating self-XC for SIC orbitals
+ 1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000 
+ 1.000000 
+-2.069227 -2.069159 -0.393144 -0.392537 -0.391465 -0.392025 -0.387926 -0.387012 
+-0.400665 
+Evaluating self-Hartree for SIC orbitals
+ 2.102801  2.102746  0.385160  0.384267  0.382490  0.383306  0.374713  0.373394 
+ 0.388318 
+
+Total Energy =                        -111.747382019381078
+Nuclear Repulsion Energy =              41.563643693362408
+One-electron Energy =                 -233.236254111660855
+Two-electron Energy =                   79.913301383552678
+Two-electron Coulomb Energy =           95.098119393012865
+DFT Exchange-Correlation Energy =      -15.184818009460193
+Total DFT Energy (no SIC)       =     -111.759309034745783
+SIC  Energy                     =        0.011927015364694
+Commutator Error: 3.6802e-05 
+*** using previous pivoting vectors (do_piv=False) ***
+*** deviation sum_Pi from total P: 6.3595396735279414e-15
+Eigenvalues of Overlap:
+ 0.723594  0.755847  0.879015  0.923230  0.998886  1.112672  1.138906  1.218970 
+ 1.248879 
+Condition number:  1.7259396258592257
+
+Evaluating self-XC for SIC orbitals
+ 1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000 
+ 1.000000 
+-2.069227 -2.069159 -0.393144 -0.392537 -0.391465 -0.392025 -0.387926 -0.387012 
+-0.400665 
+Evaluating self-Hartree for SIC orbitals
+ 2.102801  2.102746  0.385160  0.384267  0.382490  0.383306  0.374713  0.373394 
+ 0.388318 
+
+Total Energy =                        -111.747382019419334
+Nuclear Repulsion Energy =              41.563643693362408
+One-electron Energy =                 -233.236265768886739
+Two-electron Energy =                   79.913312897811807
+Two-electron Coulomb Energy =           95.098131559955192
+DFT Exchange-Correlation Energy =      -15.184818662143378
+Total DFT Energy (no SIC)       =     -111.759309177712524
+SIC  Energy                     =        0.011927158293195
+Commutator Error: 8.5420e-06 
+*** using previous pivoting vectors (do_piv=False) ***
+*** deviation sum_Pi from total P: 4.392962321605526e-15
+Eigenvalues of Overlap:
+ 0.723594  0.755847  0.879015  0.923229  0.998886  1.112672  1.138906  1.218971 
+ 1.248880 
+Condition number:  1.7259400660520277
+
+Evaluating self-XC for SIC orbitals
+ 1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000  1.000000 
+ 1.000000 
+-2.069227 -2.069159 -0.393144 -0.392537 -0.391465 -0.392025 -0.387926 -0.387012 
+-0.400665 
+Evaluating self-Hartree for SIC orbitals
+ 2.102801  2.102746  0.385160  0.384267  0.382490  0.383306  0.374713  0.373394 
+ 0.388318 
+
+Total Energy =                        -111.747382019421721
+Nuclear Repulsion Energy =              41.563643693362408
+One-electron Energy =                 -233.236262566658240
+Two-electron Energy =                   79.913309678509648
+Two-electron Coulomb Energy =           95.098127937051444
+DFT Exchange-Correlation Energy =      -15.184818258541801
+Total DFT Energy (no SIC)       =     -111.759309194786184
+SIC  Energy                     =        0.011927175364466
+*********************************************************************************
+********************************* NI-FLOSIC Done ********************************
+*********************************************************************************
+Elapsed time is 62.961096 seconds.
+*********************************************************************************
+
+ Lodwin Population
+ Center         charge    
+   0N         -0.11018 
+   1N         -0.11204 
+   2H          0.05253 
+   3H          0.05158 
+   4H          0.05947 
+   5H          0.05864 
+Dipole moment(X, Y, Z, Debye):  0.00142,  0.02933,  2.79320
+HOMO =  -0.42669534  LUMO =  -0.01271442 (Hartree)
+*********************************************************************************
+********************************* Relaxing FODs *********************************
+*********************************************************************************
+Energy=  -111.7473820194 RMS FOD grad= 3.6755e-02 displ= 0.00e+00 scf cycles=   1
+Energy=  -110.4253355348 RMS FOD grad= 2.5113e+00 displ= 1.00e+00 scf cycles= 120
+>>>>>>> SCF did not converge! <<<<<<<<<
+Energy=  -111.7477629052 RMS FOD grad= 2.8399e-02 displ= 9.88e-01 scf cycles=  12
+Energy=  -111.7485132748 RMS FOD grad= 9.7891e-03 displ= 4.26e-02 scf cycles=   8
+Energy=  -111.7487388362 RMS FOD grad= 6.8540e-03 displ= 2.93e-02 scf cycles=   7
+Energy=  -111.7491724289 RMS FOD grad= 6.2271e-03 displ= 7.20e-02 scf cycles=   8
+Energy=  -111.6069462464 RMS FOD grad= 1.3640e+00 displ= 6.91e-01 scf cycles=  12
+Energy=  -111.7492860492 RMS FOD grad= 1.7190e-02 displ= 5.71e-01 scf cycles=  10
+Energy=  -111.7494113091 RMS FOD grad= 5.4724e-03 displ= 6.46e-02 scf cycles=   8
+Energy=  -111.7496606089 RMS FOD grad= 9.8646e-03 displ= 9.24e-02 scf cycles=   8
+Energy=  -111.7500046589 RMS FOD grad= 9.0152e-03 displ= 1.20e-01 scf cycles=   8
+Energy=  -111.7501461820 RMS FOD grad= 1.1810e-02 displ= 1.52e-01 scf cycles=   8
+Energy=  -111.7503206056 RMS FOD grad= 3.5735e-03 displ= 7.57e-02 scf cycles=   8
+Energy=  -111.7503508945 RMS FOD grad= 2.3229e-03 displ= 5.28e-02 scf cycles=   8
+Energy=  -111.7503816509 RMS FOD grad= 1.6857e-03 displ= 2.09e-02 scf cycles=   6
+Energy=  -111.7504550174 RMS FOD grad= 4.0044e-03 displ= 1.07e-01 scf cycles=   7
+Energy=  -111.7504981749 RMS FOD grad= 2.0878e-03 displ= 2.84e-02 scf cycles=   6
+Energy=  -111.7505411454 RMS FOD grad= 1.5212e-03 displ= 7.17e-02 scf cycles=   7
+Energy=  -111.7505774385 RMS FOD grad= 1.1316e-03 displ= 5.07e-02 scf cycles=   7
+Energy=  -111.7506007812 RMS FOD grad= 8.4188e-04 displ= 6.24e-02 scf cycles=   7
+Energy=  -111.7506063697 RMS FOD grad= 1.7544e-03 displ= 8.37e-02 scf cycles=   7
+Energy=  -111.7506335031 RMS FOD grad= 1.2900e-03 displ= 4.06e-02 scf cycles=   6
+Energy=  -111.7506487467 RMS FOD grad= 8.0839e-04 displ= 5.01e-02 scf cycles=   7
+Energy=  -111.7506574231 RMS FOD grad= 6.3363e-04 displ= 2.54e-02 scf cycles=   5
+Energy=  -111.7506613397 RMS FOD grad= 2.0429e-03 displ= 6.89e-02 scf cycles=   6
+Energy=  -111.7506647026 RMS FOD grad= 9.2147e-04 displ= 3.49e-02 scf cycles=   6
+Energy=  -111.7506696721 RMS FOD grad= 5.9876e-04 displ= 3.08e-02 scf cycles=   6
+Energy=  -111.7506715889 RMS FOD grad= 4.3181e-04 displ= 1.06e-02 scf cycles=   5
+Energy=  -111.7506733452 RMS FOD grad= 2.5873e-04 displ= 1.45e-02 scf cycles=   5
+Energy=  -111.7506743568 RMS FOD grad= 2.9376e-04 displ= 1.34e-02 scf cycles=   5
+Energy=  -111.7506753951 RMS FOD grad= 2.4107e-04 displ= 1.19e-02 scf cycles=   5
+Energy=  -111.7506768903 RMS FOD grad= 2.9622e-04 displ= 1.71e-02 scf cycles=   5
+Energy=  -111.7506794802 RMS FOD grad= 4.7568e-04 displ= 4.05e-02 scf cycles=   5
+Energy=  -111.7506818327 RMS FOD grad= 3.6806e-04 displ= 3.53e-02 scf cycles=   5
+Energy=  -111.7506837450 RMS FOD grad= 2.3603e-04 displ= 2.66e-02 scf cycles=   5
+Energy=  -111.7506854335 RMS FOD grad= 1.4939e-04 displ= 2.63e-02 scf cycles=   5
+Energy=  -111.7506861124 RMS FOD grad= 9.6686e-05 displ= 1.40e-02 scf cycles=   5
+Energy=  -111.7506863436 RMS FOD grad= 1.7850e-04 displ= 1.04e-02 scf cycles=   5
+*********************************************************************************
+*********************************    Success    *********************************
+*********************************************************************************
+Elapsed time is 2313.911902 seconds.
+*********************************************************************************
+displacement RMS =  0.7361335658736778
+Gain in Energy =  -0.0033043242229382486
+Gradient FOD   =  0.0001784987827033527
+
+ Lodwin Population
+ Center         charge    
+   0N         -0.11162 
+   1N         -0.11162 
+   2H          0.05254 
+   3H          0.05252 
+   4H          0.05909 
+   5H          0.05909 
+Dipole moment(X, Y, Z, Debye): -0.00008,  0.00033,  2.83445
+HOMO =  -0.42571845  LUMO =  -0.01149590 (Hartree)
