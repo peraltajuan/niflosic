@@ -38,3 +38,4 @@ The code has been tested using the following Python packages:
 - PySCF: v2.6.0
 - NumPy: v1.25.2
 - SciPy: v1.15.1
+- PyTorch: v2.9.0
