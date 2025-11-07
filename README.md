@@ -29,3 +29,9 @@ python run_test_flosic.py <molecule> <functional> <basis> <method> <mkorbs> <cha
 ```bash
 python run_test_flosic.py CH4 pbe,pbe 6-31G lol flo 0 1
 ```
+
+The code has been tested using the following Python packages:
+
+- PySCF: v2.6.0
+- NumPy: v1.25.2
+- SciPy: v1.15.1
