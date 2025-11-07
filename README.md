@@ -26,9 +26,12 @@ python run_test_flosic.py <molecule> <functional> <basis> <method> <mkorbs> <cha
 
 ### Example
 
+To run a NIFLOSIC calculation for CH4 with the PBE functional and the 6-31G basis:
+
 ```bash
-python run_test_flosic.py CH4 pbe,pbe 6-31G lol flo 0 1
+python run_test_flosic.py CH4 pbe,pbe 6-31G elf flo 0 1
 ```
+
 
 The code has been tested using the following Python packages:
 
