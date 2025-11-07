@@ -1,0 +1,4 @@
+pyscf
+scipy
+torch
+numpy
