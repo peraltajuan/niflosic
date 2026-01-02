@@ -3,7 +3,7 @@
 
 This repository implements the Non-Iterative Fermi–Löwdin Orbital Self-Interaction Correction (NIFLOSIC) method, a computationally efficient alternative to traditional FLOSIC. NIFLOSIC eliminates the need for iterative relaxation of Fermi orbital descriptors (FODs), significantly reducing computational cost. The resulting Fermi-orbital descriptors can be used as starting points for full FLOSIC calculations.
 
-
+Authors of the manucript under consideration: J. E. Peralta, K. A. Jackson, M. R. Pederson, J. I. Melo, D. R. Alcoba, G. E. Massaccesi, L. Lain, A. Torre, and O. B. Oña.
 
 ## Usage
 
