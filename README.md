@@ -1,7 +1,8 @@
 
 # NIFLOSIC: Non-Iterative Fermi–Löwdin Orbital Self-Interaction Correction
 
-This repository implements the Non-Iterative Fermi–Löwdin Orbital Self-Interaction Correction (NIFLOSIC) method, a computationally efficient alternative to traditional FLOSIC. NIFLOSIC eliminates the need for iterative relaxation of Fermi orbital descriptors (FODs), significantly reducing computational cost while maintaining high accuracy.
+This repository implements the Non-Iterative Fermi–Löwdin Orbital Self-Interaction Correction (NIFLOSIC) method, a computationally efficient alternative to traditional FLOSIC. NIFLOSIC eliminates the need for iterative relaxation of Fermi orbital descriptors (FODs), significantly reducing computational cost. The resulting Fermi-orbital descriptors can be used as starting points for full FLOSIC calculations.
+
 
 
 ## Usage
@@ -18,7 +19,7 @@ python run_test_flosic.py <molecule> <functional> <basis> <method> <mkorbs> <cha
 |--------------|-----------------------------------------------------------------------------|
 | `molecule`   | Name of the molecule (reads from `molecule.xyz`)                            |
 | `functional` | Exchange-correlation functional(s), comma-separated (e.g., `pbe,pbe`)       |
-| `basis`      | Basis set (e.g., `6-31G`)                                                    |
+| `basis`      | Basis set (e.g., `6-31Gss`)                                                    |
 | `method`     | Method for orbital localization: `scdm-g`, `elf`, `lol`, `grid`             |
 | `mkorbs`     | Orbital generation method: `scdm-g`, `flo`                                 |
 | `charge`     | Integer charge of the system                                                |
